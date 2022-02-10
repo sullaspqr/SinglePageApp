@@ -8,17 +8,6 @@ export function InstrumentSinglePage(props)
     const [instrument, setInstrument] = useState([]);
     const [isPending, setPending] = useState(false);
 
-    // useEffect(() => {
-    //     setPending(true);
-    //     fetch(`https://kodbazis.hu/api/instruments/${id}`, { credentials: "include" })
-    //         .then((res) => res.json())
-    //         .then((hangszerek) => setInstrument(hangszerek))
-    //         .catch(console.log)
-    //         .finally(() => {
-    //             setPending(false);
-    //         });
-    // }, [])
-
     useEffect(() => {
         setPending(true);
         (async () => {

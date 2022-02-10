@@ -27,8 +27,8 @@ export function InstrumentListPage()
                     {instruments.map((instrument) => (
                         <NavLink key={instrument.id} to={"/hangszer/" + instrument.id}>
                         <div className="card col-sm-3 d-inline-block m-1 p-2">
-                         <h6 className="text-muted" >{instrument.brand}</h6>
-                         <h5 className="text-dark">{instrument.name}</h5>
+                         <h5 className="text-muted" >{instrument.brand}</h5>
+                         <p className="text-dark">{instrument.name}</p>
                          <div>{instrument.price} ft -</div>
                          <div className="small">Készleten: {instrument.quantity} db</div>
                          <div className="card-body">
