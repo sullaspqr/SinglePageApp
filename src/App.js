@@ -1,11 +1,12 @@
-import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, NavLink, Routes, Route } from "react-router-dom";
 import  { InstrumentListPage } from "./InstrumentListPage";
 import { InstrumentSinglePage } from "./InstrumentSinglePage";
+import { InstrumentCreatePage } from "./InstrumentCreatePage";
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
@@ -25,11 +26,9 @@ function App() {
       <Routes>
         <Route path="/" exact element={<InstrumentListPage />} />
         <Route path="/hangszer/:hangszerId" element={<InstrumentSinglePage />} />
-        <Route path="/uj-hangszer">
-          Új hangszer létrehozó oldal
-        </Route>
+        <Route path="/uj-hangszer" element={<InstrumentCreatePage />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
