@@ -52,3 +52,4 @@ export function InstrumentSinglePage(props)
         </div>
     );
 }
+export default InstrumentSinglePage;

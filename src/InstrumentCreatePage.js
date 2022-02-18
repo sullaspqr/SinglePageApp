@@ -57,3 +57,4 @@ export function InstrumentCreatePage() {
     </div>
   );
 }
+export default InstrumentCreatePage;

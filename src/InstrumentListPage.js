@@ -46,3 +46,4 @@ export function InstrumentListPage()
         </div>
     );
 }
+export default InstrumentListPage;
